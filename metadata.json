@@ -1,0 +1,8 @@
+{
+  "name": "Ledger - Personal Budget Dashboard",
+  "description": "A clean, dark-mode dashboard for tracking and visualizing personal budget expenses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-custom-bg: #070708;
+  --color-custom-divider: #232426;
+  --color-custom-card-bg: #101112;
+  --color-custom-sidebar: #0d0e0f;
+  --color-custom-panel: #111214;
+  --color-custom-text-muted: #9A9DA3;
+  --color-custom-btn-primary: #5E6BFF;
+  --color-custom-btn-text: #F0F1F2;
+  --color-primary: #bec2ff;
+  --color-secondary: #50d8e9;
+  --color-on-surface: #e5e2e3;
+  --color-on-surface-variant: #c6c5d8;
+  
+  --font-h3: "Manrope", sans-serif;
+  --font-h2: "Manrope", sans-serif;
+  --font-h1: "Manrope", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-mono-data: "Inter", monospace;
+  
+  --spacing-xl: 40px;
+  --spacing-gutter: 20px;
+  --spacing-lg: 24px;
+  --spacing-md: 16px;
+  --spacing-base: 4px;
+  --spacing-sm: 8px;
+  --spacing-margin-safe: 32px;
+  --spacing-xs: 4px;
+}
+
+@utility text-hero-headline {
+  font-size: 76px;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+  font-weight: 520;
+}
+@utility text-h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  font-weight: 520;
+}
+@utility text-h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 520;
+}
+@utility text-h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  font-weight: 520;
+}
+@utility text-h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  font-weight: 520;
+}
+@utility text-body-lg {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+@utility text-body-md {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@utility text-mono-data {
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+@utility font-h3 {
+  font-family: var(--font-h3);
+}
+@utility font-h2 {
+  font-family: var(--font-h2);
+}
+@utility font-h1 {
+  font-family: var(--font-h1);
+}
+@utility font-body-md {
+  font-family: var(--font-body-md);
+}
+@utility font-body-lg {
+  font-family: var(--font-body-lg);
+}
+@utility font-mono-data {
+  font-family: var(--font-mono-data);
+}
+
+body {
+  background-color: var(--color-custom-bg);
+  color: var(--color-on-surface);
+}
+
+.dot-pattern {
+  background-image: radial-gradient(var(--color-custom-divider) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Custom Scrollbar for smooth scrolling UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-custom-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-custom-divider);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #454655;
+}
+
+
+html { scroll-behavior: smooth; }
