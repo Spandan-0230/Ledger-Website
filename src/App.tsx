@@ -8,7 +8,7 @@ import { AnimatePresence } from 'motion/react';
 export default function App() {
   return (
     <DashboardProvider>
-      <Router>
+      <Router basename="/Ledger-Website">
         {/* AnimatePresence for page transitions */}
         <AnimatePresence mode="wait">
           <Routes>
