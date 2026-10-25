@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Landing } from './pages/Landing';
 import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
@@ -8,7 +8,7 @@ import { AnimatePresence } from 'motion/react';
 export default function App() {
   return (
     <DashboardProvider>
-      <Router basename="/Ledger-Website">
+      <Router>
         {/* AnimatePresence for page transitions */}
         <AnimatePresence mode="wait">
           <Routes>
